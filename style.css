@@ -196,3 +196,31 @@ a { color: var(--do); }
 
 .nhan-sp { display: inline-block; font-size: 11.5px; font-weight: 700; letter-spacing: .5px; text-transform: uppercase; padding: 2px 8px; border-radius: 999px; background: var(--do); color: #fff; margin-right: 6px; }
 .sp-chu .sp-mota { color: var(--chu); font-size: 14px; margin-bottom: 4px; line-height: 1.45; }
+
+/* lưới ảnh lớn cho hãng có ảnh quảng cáo tràn viền */
+.luoi-sp.lon { grid-template-columns: repeat(3, 1fr); gap: 22px; }
+.luoi-sp.lon .sp img { padding: 0; object-fit: cover; }
+.luoi-sp.lon .sp { box-shadow: 0 8px 24px rgba(60, 20, 10, .08); transition: transform .2s ease, box-shadow .2s ease; }
+.luoi-sp.lon .sp:hover { transform: translateY(-4px); box-shadow: 0 14px 32px rgba(60, 20, 10, .14); }
+@media (max-width: 900px) { .luoi-sp.lon { grid-template-columns: repeat(2, 1fr); } }
+@media (max-width: 600px) { .luoi-sp.lon { grid-template-columns: 1fr; } }
+
+/* thư viện ảnh thực tế */
+.thu-vien { display: grid; grid-template-columns: repeat(5, 1fr); gap: 12px; }
+.thu-vien figure { margin: 0; background: #fff; border: 1px solid var(--vien); border-radius: 12px; overflow: hidden; }
+.thu-vien img { aspect-ratio: 3 / 4; object-fit: cover; width: 100%; }
+.thu-vien figcaption { font-size: 13px; color: var(--chu-nhat); padding: 6px 10px; }
+@media (max-width: 900px) { .thu-vien { grid-template-columns: repeat(3, 1fr); } }
+@media (max-width: 600px) { .thu-vien { grid-template-columns: repeat(2, 1fr); } }
+
+/* sổ tay sản phẩm cho nhân viên */
+.st-luoi { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; }
+.st-the { display: flex; flex-direction: column; background: #fff; border: 1px solid var(--vien); border-radius: 18px; overflow: hidden; text-decoration: none; color: var(--chu); box-shadow: 0 8px 24px rgba(60,20,10,.07); transition: transform .2s ease, box-shadow .2s ease; }
+.st-the:hover { transform: translateY(-4px); box-shadow: 0 14px 32px rgba(60,20,10,.14); }
+.st-the img { aspect-ratio: 4 / 3; object-fit: cover; width: 100%; background: #fff; }
+.st-the div { padding: 16px 18px 20px; }
+.st-the h3 { margin: 8px 0 6px; font-size: 20px; }
+.st-the p { margin: 0 0 10px; color: var(--chu-nhat); font-size: 15px; }
+.st-the b { color: var(--do); }
+@media (max-width: 900px) { .st-luoi { grid-template-columns: repeat(2, 1fr); } }
+@media (max-width: 600px) { .st-luoi { grid-template-columns: 1fr; } }
