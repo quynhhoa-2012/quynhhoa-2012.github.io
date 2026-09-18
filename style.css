@@ -176,7 +176,15 @@ a { color: var(--do); }
 .dai-anh-bia img { width: 132px; height: 132px; object-fit: contain; background: #fff; border-radius: 16px; padding: 8px; box-shadow: 0 6px 20px rgba(0,0,0,.18); }
 @media (max-width: 700px) { .dai-anh-bia img { width: 76px; height: 76px; border-radius: 12px; } .dai-anh-bia img:nth-child(n+5) { display: none; } }
 .the .hop-voi { margin-top: 10px; font-size: 15px; }
-.nhom-sp { font-size: 20px; margin: 32px 0 14px; padding-left: 12px; border-left: 4px solid var(--do); }
+.nhom-sp { font-size: 20px; margin: 32px 0 14px; padding-left: 12px; border-left: 4px solid var(--do); scroll-margin-top: 84px; }
+.nhom-sp small { font-size: 14px; font-weight: 500; color: var(--chu-nhat); }
+.nhom-con { font-size: 16px; margin: 22px 0 10px; color: var(--do-dam); }
+.muc-luc { display: grid; grid-template-columns: repeat(auto-fill, minmax(220px, 1fr)); gap: 12px; margin: 8px 0 12px; }
+.muc { display: block; background: var(--kem); border: 1px solid var(--vien); border-radius: var(--bo); padding: 14px 16px; text-decoration: none; color: var(--chu); }
+.muc:hover { border-color: var(--do); }
+.muc b { display: block; font-size: 16px; line-height: 1.35; }
+.muc span { display: inline-block; margin-top: 4px; font-size: 14px; font-weight: 600; color: var(--do); }
+.muc small { display: block; margin-top: 4px; font-size: 13px; line-height: 1.45; color: var(--chu-nhat); }
 .luoi-sp { display: grid; grid-template-columns: repeat(4, 1fr); gap: 16px; }
 @media (max-width: 900px) { .luoi-sp { grid-template-columns: repeat(3, 1fr); } }
 @media (max-width: 600px) { .luoi-sp { grid-template-columns: repeat(2, 1fr); gap: 10px; } }
