@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+Disallow: /thuong-hieu/hang-tre-em.html
+
+Sitemap: https://quynhhoa-2012.github.io/sitemap.xml
